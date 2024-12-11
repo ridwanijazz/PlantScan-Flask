@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Menentukan port yang akan digunakan
-EXPOSE 8080
+ENV PORT 8080
 
 # Menjalankan aplikasi Flask
 CMD ["python", "chili.py"]

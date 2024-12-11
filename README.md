@@ -13,7 +13,6 @@ PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengemb
 
 ### Hasil Diagnosa
 - API mengembalikan hasil analisis, seperti:
-  - Jenis tanaman yang terdeteksi.
   - Informasi kesehatan tanaman (sehat atau terkena penyakit).
   - Saran perawatan jika diperlukan.
 
@@ -35,8 +34,7 @@ PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengemb
 - Dapat diintegrasikan dengan berbagai platform, termasuk aplikasi mobile.
 
 ### Aplikasi Mobile
-- API ini akan diimplementasikan ke dalam aplikasi mobile (mungkin menggunakan Flutter, React Native, atau framework lainnya).
-
+- API ini akan diimplementasikan ke dalam aplikasi mobile.
 ## Alur Kerja Program
 
 1. **Pengguna Mengunggah Gambar**

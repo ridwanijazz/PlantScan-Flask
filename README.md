@@ -1,40 +1,38 @@
-# Gambaran Umum Program
-PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengembangan aplikasi web. Program ini dirancang untuk melakukan analisis tanaman menggunakan model machine learning berbasis TensorFlow Keras. Tujuan utama program ini adalah untuk memproses gambar tanaman, menganalisisnya, dan memberikan hasil diagnosa yang nantinya dapat diakses melalui aplikasi mobile.
+## Gambaran Umum
+PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengembangan aplikasi web. Program ini dirancang untuk melakukan analisis tanaman menggunakan model machine learning berbasis TensorFlow Keras. Tujuan utama dari aplikasi ini adalah untuk memproses gambar tanaman, menganalisisnya, dan memberikan hasil diagnosa yang dapat diakses melalui aplikasi mobile.
 
-## Fitur Utama Program
+## Fitur Utama
 
-### Upload Gambar Tanaman
+### 1. Upload Gambar Tanaman
 - Pengguna dapat mengunggah gambar tanaman melalui API.
-- Gambar ini akan diproses untuk analisis lebih lanjut.
+- Gambar yang diunggah akan diproses untuk analisis lebih lanjut.
 
-### Analisis Berbasis Machine Learning
-- Program menggunakan model TensorFlow Keras yang telah dilatih untuk melakukan klasifikasi atau deteksi penyakit pada tanaman.
-- Model ini diproses dalam backend Flask.
+### 2. Analisis Berbasis Machine Learning
+- Menggunakan model TensorFlow Keras yang telah dilatih untuk klasifikasi atau deteksi penyakit pada tanaman.
+- Proses analisis dilakukan di backend Flask.
 
-### Hasil Diagnosa
-- API mengembalikan hasil analisis, seperti:
+### 3. Hasil Diagnosa
+- API mengembalikan hasil analisis yang mencakup:
   - Informasi kesehatan tanaman (sehat atau terkena penyakit).
   - Saran perawatan jika diperlukan.
 
-### Integrasi dengan Aplikasi Mobile
-- API ini dirancang untuk diintegrasikan dengan aplikasi mobile sehingga pengguna dapat mengakses layanan analisis secara langsung dari perangkat seluler.
+### 4. Integrasi dengan Aplikasi Mobile
+- API dirancang untuk integrasi dengan aplikasi mobile, memungkinkan pengguna mengakses layanan analisis secara langsung dari perangkat seluler.
 
 ## Teknologi yang Digunakan
 
-### Flask Framework
+### 1. Flask Framework
 - Digunakan untuk membangun API backend.
-- Menangani request dari aplikasi mobile dan mengirimkan hasil analisis.
+- Menangani permintaan dari aplikasi mobile dan mengirimkan hasil analisis.
 
-### TensorFlow Keras
-- Model deep learning dilatih menggunakan TensorFlow Keras.
-- Model ini digunakan untuk menganalisis gambar tanaman yang diunggah pengguna.
+### 2. TensorFlow Keras
+- Model deep learning yang dilatih menggunakan TensorFlow Keras.
+- Digunakan untuk menganalisis gambar tanaman yang diunggah oleh pengguna.
 
-### REST API
+### 3. REST API
 - API berbasis HTTP untuk menerima gambar dan mengirimkan hasil analisis.
 - Dapat diintegrasikan dengan berbagai platform, termasuk aplikasi mobile.
 
-### Aplikasi Mobile
-- API ini akan diimplementasikan ke dalam aplikasi mobile.
 ## Alur Kerja Program
 
 1. **Pengguna Mengunggah Gambar**
@@ -49,5 +47,35 @@ PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengemb
 
 4. **Hasil Analisis Dikembalikan ke Pengguna**
    - API mengembalikan hasil diagnosa ke aplikasi mobile dalam format JSON.
-   - Pengguna dapat melihat hasil analisis langsung di aplikasi.
+   - Pengguna dapat melihat hasil analisis secara langsung di aplikasi.
 
+## Instalasi
+
+Untuk menginstal dan menjalankan aplikasi, ikuti langkah-langkah berikut:
+
+1. **Clone repositori:**
+   ```bash
+   git clone https://github.com/ridwanijazz/PlantScan-Flask.git
+2. **Masuk ke direktori proyek:**
+    ```bash
+    cd PlantScan-Flask
+3. **Instal dependensi:**
+    ```bash
+    pip install -r requirements.txt
+4. **Jalankan aplikasi:**
+   ```bash
+   python <nama-api>.py
+   
+## Penggunaan API
+Untuk menggunakan API, kirim permintaan POST ke endpoint /upload dengan file gambar.
+
+**Contoh Permintaan**
+  ```bash
+  curl -X POST -F 'file=@path_to_image.jpg' http://localhost:8080/upload
+
+**Contoh Respons**
+  ```bash
+  {
+      "health_status": "sehat",
+      "care_suggestions": "Tidak ada tindakan yang diperlukan."
+  }

@@ -69,11 +69,10 @@ Untuk menginstal dan menjalankan aplikasi, ikuti langkah-langkah berikut:
 ## Penggunaan API
 Untuk menggunakan API, kirim permintaan POST ke endpoint /upload dengan file gambar.
 
-**Contoh Permintaan**
-  ```bash
-  curl -X POST -F 'file=@path_to_image.jpg' http://localhost:8080/upload
-
-**Contoh Respons**
+1. **Contoh Permintaan**
+   ```bash
+    curl -X POST -F 'file=@path_to_image.jpg' http://localhost:8080/upload
+2. **Contoh Respons**
   ```bash
   {
       "health_status": "sehat",

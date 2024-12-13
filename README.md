@@ -1,5 +1,5 @@
 ## Gambaran Umum
-PlantScan-Flask adalah sebuah API berbasis Flask, framework Python untuk pengembangan aplikasi web. Program ini dirancang untuk melakukan analisis tanaman menggunakan model machine learning berbasis TensorFlow Keras. Tujuan utama dari aplikasi ini adalah untuk memproses gambar tanaman, menganalisisnya, dan memberikan hasil diagnosa yang dapat diakses melalui aplikasi mobile.
+PlantScan adalah sebuah aplikasi inovatif yang dirancang untuk membantu pengguna mengidentifikasi tanaman dan memberikan informasi terkait perawatan tanaman tersebut. Dengan memanfaatkan teknologi machine learning berbasis TensorFlow Keras, PlantScan memungkinkan pengguna untuk memfoto tanaman menggunakan aplikasi mobile, lalu menerima hasil analisis secara langsung.
 
 ## Fitur Utama
 
